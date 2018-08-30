@@ -17,7 +17,7 @@ var sortedStudents = students.sort(function(a, b){
 	}else if (a.name > b.name) {
         return true
 
-    }else { return 0 //default return value (no sorting)
+    }else { return false //default return value (no sorting)
 
     }
 });
