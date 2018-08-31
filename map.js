@@ -1,17 +1,16 @@
 var words = ["ground", "control", "to", "major", "tom"];
-var array = [];
+map(words, function(word) { return word.length; })
 
+function map(array, cb) {
+  var mapped = [];
+  for (var i = 0; i < array.length; i++) {
+  	mapped.push(cb(array[i]))
+  }
+  console.log(mapped)
 
-function map(array, transform) {
-  let mapped = [];
-  for (let map of words) {
-    mapped.push(transform(map));
-  
 }
 
-map(words, function(word) {
-  return word.length;
-});
+
 
 // console.log(wordLength)
 
@@ -25,11 +24,3 @@ map(words, function(word) {
   return word.split('').reverse().join('');
 });
 
-
-  return mapped;
-}
-map()
-
-
-
-words.map()
